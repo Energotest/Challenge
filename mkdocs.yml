@@ -1,0 +1,7 @@
+site_name: Energotest Challenge
+theme: readthedocs
+pages:
+  - 'index.md'
+markdown_extensions:
+  - plantuml
+  - admonition
