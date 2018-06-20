@@ -1,0 +1,44 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Overview\n\n\nDesign, implement, test and document a minimial working system.\n\n\nThis challenge was created to check your familiarity with common concepts, standard metodologies and tools used in everyday development.\n\n\nWe assume you can use:\n\n\n\n\nGoogle\n to search for documentation\n\n\nGNU/Linux\n as primary development platform\n\n\ngit\n for version control\n\n\nbash\n and standard command-line tools like \ncat\n, \ngrep\n, \nps\n, etc.\n\n\nterminal-based text editor like \nemacs\n or \nvi\n\n\nDoxygen\n for api reference documentation\n\n\nMkDocs\n, \nMarkdown\n and \nLaTeX\n for general documentation\n\n\nC++\n as primary programming language (including features introduced in \nC++11\n and \nC++14\n)\n\n\ng++\n as primary compiler for \nC++\n (and \ngdb\n for debugging)\n\n\nQtCreator\n as primary IDE (and\nqmake\n/\ncmake\n to build projects)\n\n\nstandard \nC++\n libraries like \nboost\n and \nQt\n\n\n\n\n\n\nWarning\n\n\nYou should also know and understand the difference between clean and noisy code.\n\n\n\n\nGeneral requirements\n\n\n\n\nC++\n and cross-platform\n\n\nTCP/IP communication between the library and the server\n\n\ncustom protocol (application layer)\n\n\nserver works as system service\n\n\nclient application with graphical user interface using Qt\n\n\n\n\nComponents\n\n\nFollowing diagram shows all components.\n\n\n\n\nApplication\n\n\nUser is able to:\n\n\n\n\ncreate new event\n\n\nview all events\n\n\n\n\nThe user should be notified whenever new event is created on the server.\n\n\nServer\n\n\nCustom designed protocol over TCP/IP. Events are created only by connected clients.\n\n\nDatabase\n\n\nA record in the database represents an event and must have 3 fields:\n\n\n\n\ntimestamp\n\n\npriority\n\n\ntext\n\n\n\n\n\n\nNote\n\n\nYou can use any database you like but it must be available for all major platforms (including embedded GNU/Linux).\n\n\n\n\nFinal notes\n\n\nThe challenge is intentionally loosely defined.\nYou are free to use time-series database instead of relational database if you wish.\nYou can implement authentication and/or authorization.\nYou can add support for syslog on unix platforms.\nYou can add encryption layer to the protocol.\nYou can use some serialization framework like protocol-buffers to implement the protocol or maybe you wish to define it in EBNF and implement a parser with boost::spirit.\nIt is up to you.\nShow us what you can do in reasonable short time.\n\n\nIf you have any questions regarding this challenge, please send mail directly to: mstarczewski@energotest.com.pl.",
+            "title": "Home"
+        },
+        {
+            "location": "/#overview",
+            "text": "Design, implement, test and document a minimial working system.  This challenge was created to check your familiarity with common concepts, standard metodologies and tools used in everyday development.  We assume you can use:   Google  to search for documentation  GNU/Linux  as primary development platform  git  for version control  bash  and standard command-line tools like  cat ,  grep ,  ps , etc.  terminal-based text editor like  emacs  or  vi  Doxygen  for api reference documentation  MkDocs ,  Markdown  and  LaTeX  for general documentation  C++  as primary programming language (including features introduced in  C++11  and  C++14 )  g++  as primary compiler for  C++  (and  gdb  for debugging)  QtCreator  as primary IDE (and qmake / cmake  to build projects)  standard  C++  libraries like  boost  and  Qt    Warning  You should also know and understand the difference between clean and noisy code.",
+            "title": "Overview"
+        },
+        {
+            "location": "/#general-requirements",
+            "text": "C++  and cross-platform  TCP/IP communication between the library and the server  custom protocol (application layer)  server works as system service  client application with graphical user interface using Qt",
+            "title": "General requirements"
+        },
+        {
+            "location": "/#components",
+            "text": "Following diagram shows all components.",
+            "title": "Components"
+        },
+        {
+            "location": "/#application",
+            "text": "User is able to:   create new event  view all events   The user should be notified whenever new event is created on the server.",
+            "title": "Application"
+        },
+        {
+            "location": "/#server",
+            "text": "Custom designed protocol over TCP/IP. Events are created only by connected clients.",
+            "title": "Server"
+        },
+        {
+            "location": "/#database",
+            "text": "A record in the database represents an event and must have 3 fields:   timestamp  priority  text    Note  You can use any database you like but it must be available for all major platforms (including embedded GNU/Linux).",
+            "title": "Database"
+        },
+        {
+            "location": "/#final-notes",
+            "text": "The challenge is intentionally loosely defined.\nYou are free to use time-series database instead of relational database if you wish.\nYou can implement authentication and/or authorization.\nYou can add support for syslog on unix platforms.\nYou can add encryption layer to the protocol.\nYou can use some serialization framework like protocol-buffers to implement the protocol or maybe you wish to define it in EBNF and implement a parser with boost::spirit.\nIt is up to you.\nShow us what you can do in reasonable short time.  If you have any questions regarding this challenge, please send mail directly to: mstarczewski@energotest.com.pl.",
+            "title": "Final notes"
+        }
+    ]
+}

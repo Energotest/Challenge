@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Energotest Challenge</title>
+  
+
+  <link rel="shortcut icon" href="./img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "None";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script>
+  <script src="./js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Energotest Challenge</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href=".">Home</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#overview">Overview</a></li>
+                
+                    <li><a class="toctree-l4" href="#general-requirements">General requirements</a></li>
+                
+                    <li><a class="toctree-l4" href="#components">Components</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#final-notes">Final notes</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Energotest Challenge</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="overview">Overview</h1>
+<p><em>Design, implement, test and document a minimial working system.</em></p>
+<p>This challenge was created to check your familiarity with common concepts, standard metodologies and tools used in everyday development.</p>
+<p>We assume you can use:</p>
+<ul>
+<li><code>Google</code> to search for documentation</li>
+<li><code>GNU/Linux</code> as primary development platform</li>
+<li><code>git</code> for version control</li>
+<li><code>bash</code> and standard command-line tools like <code>cat</code>, <code>grep</code>, <code>ps</code>, etc.</li>
+<li>terminal-based text editor like <code>emacs</code> or <code>vi</code></li>
+<li><code>Doxygen</code> for api reference documentation</li>
+<li><code>MkDocs</code>, <code>Markdown</code> and <code>LaTeX</code> for general documentation</li>
+<li><code>C++</code> as primary programming language (including features introduced in <code>C++11</code> and <code>C++14</code>)</li>
+<li><code>g++</code> as primary compiler for <code>C++</code> (and <code>gdb</code> for debugging)</li>
+<li><code>QtCreator</code> as primary IDE (and<code>qmake</code>/<code>cmake</code> to build projects)</li>
+<li>standard <code>C++</code> libraries like <code>boost</code> and <code>Qt</code></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You should also know and understand the difference between clean and noisy code.</p>
+</div>
+<h2 id="general-requirements">General requirements</h2>
+<ul>
+<li><code>C++</code> and cross-platform</li>
+<li>TCP/IP communication between the library and the server</li>
+<li>custom protocol (application layer)</li>
+<li>server works as system service</li>
+<li>client application with graphical user interface using Qt</li>
+</ul>
+<h2 id="components">Components</h2>
+<p>Following diagram shows all components.</p>
+<p><img alt="uml diagram" classes="uml" src="data:image/png;base64,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" title="" /></p>
+<h3 id="application">Application</h3>
+<p>User is able to:</p>
+<ul>
+<li>create new event</li>
+<li>view all events</li>
+</ul>
+<p>The user should be notified whenever new event is created on the server.</p>
+<h3 id="server">Server</h3>
+<p>Custom designed protocol over TCP/IP. Events are created only by connected clients.</p>
+<h3 id="database">Database</h3>
+<p>A record in the database represents an event and must have 3 fields:</p>
+<ul>
+<li>timestamp</li>
+<li>priority</li>
+<li>text</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can use any database you like but it must be available for all major platforms (including embedded GNU/Linux).</p>
+</div>
+<h1 id="final-notes">Final notes</h1>
+<p>The challenge is intentionally loosely defined.
+You are free to use time-series database instead of relational database if you wish.
+You can implement authentication and/or authorization.
+You can add support for syslog on unix platforms.
+You can add encryption layer to the protocol.
+You can use some serialization framework like protocol-buffers to implement the protocol or maybe you wish to define it in EBNF and implement a parser with boost::spirit.
+It is up to you.
+Show us what you can do in reasonable short time.</p>
+<p>If you have any questions regarding this challenge, please send mail directly to: mstarczewski@energotest.com.pl.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 0.15.3
+Build Date UTC : 2018-01-12 07:11:15
+-->
