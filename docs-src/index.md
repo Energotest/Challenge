@@ -89,4 +89,4 @@ You can use some serialization framework like protocol-buffers to implement the 
 It is up to you.
 Show us what you can do in reasonable short time.
 
-If you have any questions regarding this challenge, please send mail directly to: mstarczewski@energotest.com.pl.
+If you have any questions regarding this challenge, please send mail directly to: pmason@energotest.com.pl.
